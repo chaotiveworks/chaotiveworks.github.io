@@ -18,3 +18,9 @@ const swiper = new Swiper('.swiper-container', {
     loadPrevNext: true
   }
 });
+document.querySelectorAll('a[href="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+});
+
