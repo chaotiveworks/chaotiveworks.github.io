@@ -3,27 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Chaotive Studio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>John Doe</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <img src="assets/images/logo.png" alt="Logo" class="logo" />
+      <h1 class="site-title">CHAOTIVE STUDIO</h1>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
+  
 
   <section class="hero" id="about">
-    <h2>Hello, I'm <span class="accent">John</span></h2>
-    <p>I’m a passionate web developer building modern, fast, and responsive websites and apps.</p>
+    <h2>We are <span class="accent">Chaotive</span></h2>
+    <p>CHAOS x CREATIVE; Turning disaster into masterpiece in creative way</p>
   </section>
+
+  <!-- Swiper -->
+  <section class="swiper-container swiper-parallax">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="parallax-bg" style="background-image:url('assets/images/slide1.jpg');" data-swiper-parallax="-30%"></div>
+        <div class="slide-content" data-swiper-parallax="-100">
+          <h2>Slide 1 Title</h2>
+          <p>Slide 1 Description</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="parallax-bg" style="background-image:url('assets/images/slide2.jpg');" data-swiper-parallax="-30%"></div>
+        <div class="slide-content" data-swiper-parallax="-100">
+          <h2>Slide 2 Title</h2>
+          <p>Slide 2 Description</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="parallax-bg" style="background-image:url('assets/images/slide3.jpg');" data-swiper-parallax="-30%"></div>
+        <div class="slide-content" data-swiper-parallax="-100">
+          <h2>Slide 3 Title</h2>
+          <p>Slide 3 Description</p>
+        </div>
+      </div>
+    </div>
+      <!-- Pagination & Nav -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
   <!-- CTA Section -->
   <section class="cta">
-    <h3>Need a website or want to collaborate?</h3>
+    <h3>Need or want to collaborate?</h3>
     <a href="#contact" class="cta-button">Let's Work Together</a>
   </section>
 
@@ -32,8 +71,8 @@
     <h2>My Projects</h2>
     <div class="project-list">
       <div class="project-card">
-        <h4>Portfolio Website</h4>
-        <p>A responsive personal website to showcase my work and skills.</p>
+        <h4>Portfolio</h4>
+        <p>A responsive personal website to showcase our work and skills.</p>
         <a href="https://github.com/username/portfolio" target="_blank">View on GitHub</a>
       </div>
       <div class="project-card">
